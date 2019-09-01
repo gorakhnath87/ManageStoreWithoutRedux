@@ -4,8 +4,8 @@ import Card from '../UI/Card';
 import { useStore } from '../../hooks-store/store';
 import './EmployeeItem.css';
 
-const EmployeeItem = props => {
-  const dispatch = useStore()[1];
+const EmployeeItem = React.memo(props => {
+  const dispatch = useStore(false)[1];
 
   const toggleFavHandler = () => {
     // toggleFav(props.id);
@@ -26,6 +26,6 @@ const EmployeeItem = props => {
       </div>
     </Card>
   );
-};
+});
 
 export default EmployeeItem;

@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
-import configureProductsStore from './hooks-store/products-store';
+import configureProductsStore from './hooks-store/employee-store';
 
 configureProductsStore();
 
