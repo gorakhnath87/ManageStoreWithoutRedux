@@ -7,14 +7,14 @@ import './EmployeeItem.css';
 const EmployeeItem = React.memo(props => {
   const dispatch = useStore(false)[1];
 
-  const toggleFavHandler = () => {
+  const toggleFavHandler = () =>  {
     // toggleFav(props.id);
     dispatch('TOGGLE_FAV', props.id);
   };
 
   return (
     <Card style={{ marginBottom: '1rem' }}>
-      <div className="product-item">
+      <div className="employee-item">
         <h2 className={props.isFav ? 'is-fav' : ''}>{props.title}</h2>
         <p>{props.name}</p>
         <button
