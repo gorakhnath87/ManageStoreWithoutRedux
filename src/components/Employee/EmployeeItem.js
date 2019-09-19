@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Card from '../UI/Card';
-import { useStore } from '../../hooks-store/store';
+import { useStore } from '../../store/store';
 import './EmployeeItem.css';
 
 const EmployeeItem = React.memo(props => {

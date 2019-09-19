@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
-import EmployeeItem from '../components/Products/EmployeeItem';
-import { useStore } from '../hooks-store/store';
+import EmployeeItem from '../components/Employee/EmployeeItem';
+import { useStore } from '../store/store';
 import './Products.css';
 
 const Employee = props => {
